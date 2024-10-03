@@ -1,4 +1,4 @@
-# Wasse UI React v2.1
+# Wasse UI React v2.1 (Fondos de perfiles, audios, gifs)
 
 ## Prerequisites
 
