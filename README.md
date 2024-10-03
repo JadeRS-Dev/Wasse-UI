@@ -1,4 +1,4 @@
-# Nitro React v2.1
+# Wasse UI React v2.1
 
 ## Prerequisites
 
