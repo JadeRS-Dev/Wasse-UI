@@ -1,0 +1,143 @@
+.nitro-purse-credits {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    padding: 5px;
+    transition: all ease .3s;
+    scale: 1;
+  }
+
+.nitro-purse-container {
+    font-size: .7875rem;
+    position: fixed !important;
+    width: 340px;
+    height: 58px;
+    right: 22px !important;
+    top: 12px !important;
+    pointer-events: all;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgb(22, 22, 22) 7%, rgb(23, 23, 23) 0);
+    box-shadow: inset 0 5px rgba(34, 34, 39, 0.6), inset 0 -4px rgba(18, 18, 21, 0.8);
+    border: 1px solid #222222;
+    animation: nitropursecontainer linear 0.5s;
+
+    .nitro-purse {
+        margin-top: -5px;
+        display: flex !important;
+        width: 100%; 
+
+        .nitro-purse-subscription {
+            background-color: rgba($light, 0.1);
+        }
+    
+        .nitro-purse-button {
+            padding: 3px 2px;
+            display: inline-flex !important;
+            position: absolute;
+        }
+
+        .nitro-purse-button2 {
+            padding: 3px 2px;
+            display: inline-flex !important;
+            position: absolute;
+            margin-left: 25px;
+        }
+
+        .coffecurrencybutton{
+            border-radius: 0.5rem !important;
+            background-color: #b69b83;
+            border: 2px solid hsla(0deg, 0%, 100%, 0.5);
+            margin-bottom: 3px;
+            padding: 0px !important;
+            width: 30px;
+        }
+        .borderhccontent{
+            background-color: #212131;
+            border-radius: 0.5rem!important;
+            border: 2px solid #383853;
+            height: calc(100% - 3px);
+        }
+
+        .span-textgen {
+            visibility: hidden;
+          }
+          
+          .span-textgen.visible {
+            visibility: visible;
+          }
+          
+        .room_infogen .span-textgen.visible{
+            position: absolute;
+            white-space: nowrap;
+            background: rgba(16, 16, 16, 0.95);
+            border: 1px solid #222222;
+            color: #fff;
+            border-radius: 8px;
+            margin-top: 36px;
+            font-size: 13px;
+            width: auto;
+            height: auto;
+        }
+        
+        
+        .nitro-purse-button.currency--1 {
+            overflow: hidden;
+            margin-top: 6px;
+            margin-left: -15px;
+            background: rgb(16, 16, 16);
+            padding: 8px;
+            -webkit-box-shadow: 1px 3px 12px -6px rgba(255, 255, 255, 0.75);
+        }
+        .nitro-purse-button.currency-0 {
+            margin-left: 55px;
+            margin-top: 5px;
+            background: rgb(16, 16, 16);
+            padding: 8px;
+            -webkit-box-shadow: 1px 3px 12px -6px rgba(255, 255, 255, 0.75);
+
+        }
+        .nitro-purse-button.currency-5 {
+            overflow: hidden;
+            background: #6bafaa;
+            border: 2px solid #b5d7d5;
+            background: #3e3d3d;
+            padding: 8px;
+        }
+        .allcurrencypurse{
+            border-radius: 7px!important;
+            margin-bottom: 5px;
+        }
+    }
+
+    .nitro-purse-seasonal-currency {
+        background-color: #0b7e6dab;
+        margin-bottom: 6px;
+        margin-top: 2px;
+    }
+}
+.topcurrencygen{
+    align-self: initial;
+}
+
+.span-textgen {
+    visibility: hidden;
+    position: absolute;
+  }
+  
+.span-textgen.visible {
+    position: absolute;
+    white-space: nowrap;
+    background: rgba(16, 16, 16, 0.95);
+    border: 1px solid #222222;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 36px;
+    font-size: 13px;
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+    margin-left: -20px;
+}

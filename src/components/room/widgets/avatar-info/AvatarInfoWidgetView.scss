@@ -1,0 +1,170 @@
+.nitro-use-product-confirmation {
+    width: 350px;
+
+    .product-preview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 122px;
+        height: 130px;
+        background: url('@/assets/images/room-widgets/avatar-info/preview-background.png') no-repeat center;
+
+        .pet-image {
+            width: 122px;
+            height: 130px;
+        }
+
+        .monsterplant-image {
+            width: 122px;
+            height: 130px;
+            background: url('@/assets/images/room-widgets/furni-context-menu/monsterplant-preview.png') no-repeat center;
+        }
+    }
+}
+
+.nitro-infostand-container {
+    position: absolute;
+    right: 10px;
+    bottom: $toolbar-height + 10px;
+    pointer-events: none;
+    z-index: $infostand-zindex;
+    color: $white;
+
+    .nitro-infostand {
+        position: relative;
+        min-width: 207px;
+        max-width: 235px;
+        z-index: 30;
+        pointer-events: auto;
+        background: #0b0b0b;
+        box-shadow: inset 0 5px rgba(38, 38, 38, 0.6), inset 0 -4px rgba(38, 38, 38, 0.6);
+        border-radius: 0.5rem;
+
+        @include media-breakpoint-down(sm) {
+            top: -67px;
+        }
+
+        .form-control-sm {
+            height: 25px;
+            min-height: 25px;
+            padding: 0.1rem 0.25rem;
+        }
+
+        
+        .body-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .body-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100px;
+                max-width: 800px;
+                border-radius: $border-radius;
+
+                &.pet {
+                    max-width: 75px;
+                }
+
+                &.bot {
+                    background-image: url('@/assets/images/infostand/bot_background.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &.furni {
+                    background-color: transparent;
+                    margin-right: 0;
+                }
+            }
+            .avatar-image {
+                margin-top: -17px;
+                height: 90px;
+                margin-left: -17px;
+            }
+            .avatar-image2 {
+                height: 60px;
+                width: 60px;
+                overflow: hidden;
+                margin-left: -102px;
+                margin-top: 0px;
+                background: #0000006b;
+                border-radius: 10px;
+
+                .LayoutAvatarImageView {  // Asegúrate de ajustar el nombre de la clase según la implementación real
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                }
+            }
+            
+            .badge-image-container {
+                display: flex;
+                gap: 1rem;
+
+                .badge-image {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+
+        .body-image-plant {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 68px;
+            height: 85px;
+            max-height: 90px;
+            border-radius: $border-radius;
+        }
+
+        .motto-content {
+            min-height: 18px;
+        }
+
+        .motto-input {
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            padding: 0;
+            outline: 0;
+            border: 0;
+            color: rgba($white, 1);
+            position: relative;
+            background: transparent;
+            resize: none;
+
+            &:focus {
+                font-style: italic;
+            }
+        }
+
+        .flex-tags {
+            flex-wrap: wrap;
+            margin-bottom: -10px;
+
+            .text-tags {
+                padding: 2px;
+                border-radius: 3px;
+                background: #333;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .button-container {
+        pointer-events: auto;
+    }
+
+    .pet-stats {
+        height: 18px;
+    }
+}

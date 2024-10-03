@@ -1,0 +1,31 @@
+.nitro-loading {
+    position: relative;
+    background: #0e151d;
+    z-index: 100;
+
+    .connecting-duck {
+        position: relative;
+        top: 100px;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        left: 0;
+        background: url('@/assets/images/loading/loading_screen.gif') no-repeat;
+        width: 300px;
+        height: 184px;
+        image-rendering: pixelated;
+        background-position: center;
+    }
+
+    .nitro-logo {
+        width: 47px;
+        height: 65px;
+        background: transparent url('https://assets.nitrodev.co/logos/react-loader.png') no-repeat center;
+        z-index: 1;
+    }
+
+    .progress-connection {
+        margin:auto;
+        margin-top: 10px;
+    }
+}
